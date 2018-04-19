@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "Extension web de Hypothesis",
+  "version": "1.0",
+  "description": "Extensión de Google Chrome que muestra en la página de un grupo de Hypothesis de examenes varios graficos",
+
+  "icons": {
+     "16": "icons/icon16.png",
+     "48": "icons/icon48.png",
+     "128": "icons/icon128.png"
+            },
+
+  "browser_action": {
+    "default_title": "Disfruta del gráfico!",
+    "default_icon": "icons/icon.png" 
+  },
+
+  "permissions": [
+   "tabs",
+    "activeTab"
+  ],
+
+  "content_scripts": [
+    {
+        "matches": ["https://hypothes.is/groups/*"],
+        "css": ["estilo.css"],
+        "js": ["content.js","lib/d3.v3.js","lib/d3-sankey.js", "lib/d3.tip.v0.6.3.js","lib/lodash_4.17.5.js"]
+
+    }
+  ]
+}
+

@@ -1,0 +1,75 @@
+/* Estilos para los botones*/
+#botonScatter, #botonSankey{
+    margin-top: 20px;
+    line-height: 60px;
+    font-weight: bold;
+    padding: 0 15px;
+    background: salmon;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 4px 20px;
+    display: inline-block;
+}
+
+#botonScatter:hover, #botonSankey:hover {
+    background: lightsalmon;
+}
+
+
+/* Estilos para el Scatter plot (grafico de dispersion)*/
+circle {
+    stroke: #333;
+    stroke-width: 1.25px;
+    opacity: 0.9;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.dot {
+    opacity: .7;
+    cursor: pointer;
+    stroke: #000;
+}
+
+.d3tip {
+    font-family: Arial, helvetica, sans-serif;
+    font-size: 10px;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 4px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-align:center;
+}
+
+/* Estilos para el Alluvial diagram*/
+.node rect {
+    cursor: move;
+    fill-opacity: .9;
+    shape-rendering: crispEdges;
+}
+
+.node text {
+    pointer-events: none;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.link {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .2;
+}
+
+.link:hover {
+    stroke-opacity: .5;
+}
+
