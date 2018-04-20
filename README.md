@@ -1,1 +1,1 @@
-# web-extension
+# Extension Hypothesis
